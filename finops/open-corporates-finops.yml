@@ -1,0 +1,48 @@
+name: OpenCorporates API FinOps
+description: Financial operations guidance for managing OpenCorporates API costs and usage efficiency.
+url: https://opencorporates.com/pricing/
+currency: GBP
+billingCycle: annual
+costPerCall:
+  - plan: Essentials
+    annualCost: 2250
+    callsPerMonth: 500
+    totalCallsPerYear: 6000
+    costPerCall: 0.375
+  - plan: Starter
+    annualCost: 6600
+    callsPerMonth: 2500
+    totalCallsPerYear: 30000
+    costPerCall: 0.22
+  - plan: Basic
+    annualCost: 12000
+    callsPerMonth: 5000
+    totalCallsPerYear: 60000
+    costPerCall: 0.20
+throughputEstimates:
+  notes: Assuming approximately 3 API calls per company verification (search + retrieve + officer check).
+  plans:
+    - plan: Essentials
+      companiesPerMonth: 166
+    - plan: Starter
+      companiesPerMonth: 833
+    - plan: Basic
+      companiesPerMonth: 1666
+costOptimization:
+  - title: Cache results locally
+    description: Cache company data locally to avoid re-querying the same companies repeatedly, as each call is billable regardless of result.
+  - title: Batch lookups strategically
+    description: Plan your lookups to stay within daily limits and avoid wasting monthly quota in short bursts.
+  - title: Use precise queries
+    description: Use specific company numbers and jurisdiction codes for retrieval rather than broad name searches to reduce failed/empty-result calls.
+  - title: Monitor account status
+    description: Regularly query the account_status endpoint (https://api.opencorporates.com/v0.4/account_status) to track remaining calls and avoid unexpected overages.
+  - title: Consider public benefit access
+    description: If your use case qualifies (journalism, NGO, academic research, anti-corruption), apply for complimentary large-scale access instead of purchasing a paid plan.
+  - title: Upgrade tier strategically
+    description: Cost per call decreases at higher tiers. If consistently hitting limits on Essentials (£0.375/call), upgrading to Starter (£0.22/call) reduces per-call cost by 41%.
+alternatives:
+  - name: Enterprise bulk delivery
+    description: For very high volumes, bulk SFTP data delivery may be more cost-effective than API-per-call pricing. Contact OpenCorporates for enterprise pricing.
+  - name: Free tier for development
+    description: Use the free tier (200 calls/month, 50/day) for development, testing, and prototyping before committing to a paid plan.

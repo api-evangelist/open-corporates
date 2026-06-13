@@ -1,0 +1,76 @@
+aid: open-corporates
+name: OpenCorporates
+description: >-
+  OpenCorporates is the world's largest open database of companies, providing a
+  REST API for searching and retrieving company registration data, officer
+  information, and corporate filings globally across more than 140 jurisdictions.
+  The API enables access to company details, director and officer records,
+  statutory filings, and corporate groupings, making it a primary resource for
+  compliance, due diligence, investigative journalism, and corporate transparency.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/open-corporates/refs/heads/main/apis.yml
+created: 2026-06-13
+modified: 2026-06-13
+specificationVersion: "0.19"
+tags:
+  - Companies
+  - Corporate Data
+  - Business Intelligence
+  - Compliance
+  - Due Diligence
+  - Officers
+  - Filings
+  - Corporate Transparency
+  - Open Data
+apis:
+  - aid: open-corporates:open-corporates-api
+    name: OpenCorporates API
+    description: >-
+      REST API providing access to the world's largest open database of
+      companies. Search and retrieve company registration data, officer
+      information, corporate filings, and jurisdiction data across more than
+      140 jurisdictions globally.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://opencorporates.com
+    baseURL: https://api.opencorporates.com/v0.4
+    tags:
+      - Companies
+      - Officers
+      - Filings
+      - Corporate Data
+    properties:
+      - type: Documentation
+        url: https://api.opencorporates.com/documentation/API-Reference
+      - type: OpenAPI
+        url: https://api.opencorporates.com/documentation/API-Reference
+    contact:
+      - FN: OpenCorporates API Support
+        email: api@opencorporates.com
+        url: https://opencorporates.com/contact
+common:
+  - type: Website
+    url: https://opencorporates.com
+  - type: Documentation
+    url: https://api.opencorporates.com/documentation/API-Reference
+  - type: GitHubOrg
+    url: https://github.com/openc
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/opencorporates
+  - type: Blog
+    url: https://blog.opencorporates.com
+  - type: Pricing
+    url: https://opencorporates.com/pricing/
+  - type: StatusPage
+    url: https://status.opencorporates.com/
+  - type: X
+    url: https://twitter.com/opencorporates
+  - type: Plans
+    url: plans/open-corporates-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/open-corporates-rate-limits.yml
+  - type: FinOps
+    url: finops/open-corporates-finops.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

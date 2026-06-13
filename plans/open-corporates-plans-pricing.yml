@@ -1,0 +1,106 @@
+name: OpenCorporates Plans and Pricing
+description: OpenCorporates API plans and pricing tiers for accessing the world's largest open database of companies.
+url: https://opencorporates.com/pricing/
+plans:
+  - name: Free
+    description: Default access for open-license projects with share-alike attribution requirements.
+    price: 0
+    currency: GBP
+    per: month
+    rateLimits:
+      - requests: 200
+        period: month
+      - requests: 50
+        period: day
+    features:
+      - Company search
+      - Company details
+      - Officer search
+      - Filings access
+      - JSON and XML responses
+    notes: Requires open-license project with share-alike attribution. Share-alike licensing restrictions apply.
+  - name: Essentials
+    description: Entry-level paid plan for internal and external use without share-alike restrictions.
+    price: 2250
+    currency: GBP
+    per: year
+    monthlyEquivalent: 225
+    rateLimits:
+      - requests: 500
+        period: month
+      - requests: 200
+        period: day
+    features:
+      - Company search
+      - Company details
+      - Officer search
+      - Filings access
+      - JSON and XML responses
+      - Internal and external use
+      - No share-alike restrictions
+  - name: Starter
+    description: Mid-tier plan for growing use cases requiring higher API call volumes.
+    price: 6600
+    currency: GBP
+    per: year
+    monthlyEquivalent: 660
+    rateLimits:
+      - requests: 2500
+        period: month
+      - requests: 500
+        period: day
+    features:
+      - Company search
+      - Company details
+      - Officer search
+      - Filings access
+      - JSON and XML responses
+      - Internal and external use
+      - No share-alike restrictions
+  - name: Basic
+    description: Higher-volume plan for production use cases with significant API call requirements.
+    price: 12000
+    currency: GBP
+    per: year
+    monthlyEquivalent: 1200
+    rateLimits:
+      - requests: 5000
+        period: month
+      - requests: 1000
+        period: day
+    features:
+      - Company search
+      - Company details
+      - Officer search
+      - Filings access
+      - JSON and XML responses
+      - Internal and external use
+      - No share-alike restrictions
+  - name: Enterprise
+    description: Custom pricing for bulk data delivery, bespoke API access, and enterprise support.
+    price: custom
+    currency: GBP
+    per: year
+    rateLimits:
+      - requests: custom
+        period: month
+    features:
+      - Bulk data delivery via SFTP
+      - Bespoke API access
+      - Enterprise support
+      - Jurisdiction selection flexibility
+      - Custom delivery frequency
+      - Internal and external use
+      - No share-alike restrictions
+    notes: Requires specialist consultation. Contact OpenCorporates for pricing.
+  - name: Public Benefit Access
+    description: Complimentary large-scale data access for qualifying investigative journalists, NGOs, universities, and anti-corruption research groups.
+    price: 0
+    currency: GBP
+    per: year
+    features:
+      - Large-scale data access
+      - Company data
+      - Officer data
+      - Filings data
+    notes: Available to organizations advancing corporate transparency and accountability. Requires qualification review.

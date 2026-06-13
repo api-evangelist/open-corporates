@@ -1,0 +1,58 @@
+name: OpenCorporates API Rate Limits
+description: Rate limits for the OpenCorporates API across all available plans.
+url: https://api.opencorporates.com/documentation/API-Reference
+monitoringEndpoint: https://api.opencorporates.com/v0.4/account_status
+accountPage: https://opencorporates.com/users/account#api_account
+notes:
+  - Search calls are billable even when there is no match or the query returns zero results.
+  - Rate limiting is enforced per API token for server-side calls.
+  - For JavaScript widget usage, rate limiting is applied per end-user IP address, not the developer's token.
+  - A 403 HTTP status code is returned when the rate limit is exceeded.
+  - The account_status endpoint can be queried to monitor current usage and remaining calls per day and month.
+limits:
+  - plan: Free
+    period: month
+    requests: 200
+    notes: Requires share-alike open-license attribution.
+  - plan: Free
+    period: day
+    requests: 50
+  - plan: Essentials
+    period: month
+    requests: 500
+  - plan: Essentials
+    period: day
+    requests: 200
+  - plan: Starter
+    period: month
+    requests: 2500
+  - plan: Starter
+    period: day
+    requests: 500
+  - plan: Basic
+    period: month
+    requests: 5000
+  - plan: Basic
+    period: day
+    requests: 1000
+  - plan: Enterprise
+    period: month
+    requests: custom
+    notes: Defined by contract with OpenCorporates.
+httpStatusCodes:
+  - code: 200
+    meaning: Success
+  - code: 304
+    meaning: No new data since last request
+  - code: 400
+    meaning: Invalid request
+  - code: 401
+    meaning: Authentication failed or missing API token
+  - code: 403
+    meaning: Rate limit exceeded
+  - code: 404
+    meaning: Resource not found
+  - code: 500
+    meaning: Server error
+  - code: 503
+    meaning: Service overloaded or data temporarily redacted
