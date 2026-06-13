@@ -1,0 +1,60 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebAPI",
+  "@id": "https://raw.githubusercontent.com/api-evangelist/open-corporates/refs/heads/main/apis.yml",
+  "name": "OpenCorporates API",
+  "description": "REST API providing access to the world's largest open database of companies. Search and retrieve company registration data, officer information, corporate filings, and jurisdiction data across more than 140 jurisdictions globally.",
+  "url": "https://opencorporates.com",
+  "documentation": "https://api.opencorporates.com/documentation/API-Reference",
+  "termsOfService": "https://opencorporates.com/info/terms_and_conditions",
+  "provider": {
+    "@type": "Organization",
+    "name": "OpenCorporates",
+    "url": "https://opencorporates.com",
+    "sameAs": [
+      "https://github.com/openc",
+      "https://www.linkedin.com/company/opencorporates",
+      "https://twitter.com/opencorporates"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "api@opencorporates.com",
+      "url": "https://opencorporates.com/contact",
+      "contactType": "API Support"
+    }
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://opencorporates.com/pricing/"
+  },
+  "keywords": [
+    "Companies",
+    "Corporate Data",
+    "Business Intelligence",
+    "Compliance",
+    "Due Diligence",
+    "Officers",
+    "Filings",
+    "Corporate Transparency",
+    "Open Data"
+  ],
+  "availableChannel": {
+    "@type": "ServiceChannel",
+    "serviceUrl": "https://api.opencorporates.com/v0.4",
+    "serviceType": "REST API"
+  },
+  "potentialAction": [
+    {
+      "@type": "SearchAction",
+      "name": "Search Companies",
+      "target": "https://api.opencorporates.com/v0.4/companies/search?q={query}",
+      "query-input": "required name=query"
+    },
+    {
+      "@type": "SearchAction",
+      "name": "Search Officers",
+      "target": "https://api.opencorporates.com/v0.4/officers/search?q={query}",
+      "query-input": "required name=query"
+    }
+  ]
+}
