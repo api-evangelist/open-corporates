@@ -62,5 +62,17 @@
       "date": "2026-03-19",
       "description": "Part 4 questioning whether companies possess identifiers that actually identify the legal entity itself."
     }
-  ]
+  ],
+  "repo": "open-corporates",
+  "feeds": [
+    {
+      "source": "https://www.linkedin.com/company/opencorporates",
+      "feed_url": "https://www.linkedin.com/company/opencorporates",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-06-14T20:42:17Z"
 }
