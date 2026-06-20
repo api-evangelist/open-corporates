@@ -8,7 +8,7 @@ description: >-
   statutory filings, and corporate groupings, making it a primary resource for
   compliance, due diligence, investigative journalism, and corporate transparency.
 type: Index
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 url: https://raw.githubusercontent.com/api-evangelist/open-corporates/refs/heads/main/apis.yml
 created: 2026-06-13
 modified: 2026-06-13
@@ -31,7 +31,7 @@ apis:
       companies. Search and retrieve company registration data, officer
       information, corporate filings, and jurisdiction data across more than
       140 jurisdictions globally.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://opencorporates.com
     baseURL: https://api.opencorporates.com/v0.4
     tags:
