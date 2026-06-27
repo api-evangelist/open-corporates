@@ -1,70 +1,13 @@
 {
-  "url": "https://blog.opencorporates.com",
-  "retrieved": "2026-06-13",
-  "posts": [
-    {
-      "title": "How the US Government Accountability Office (GAO) is still finding ownership when 99% of companies have gone dark",
-      "url": "https://blog.opencorporates.com/2026/06/10/government-accountability-office-finding-ownership/",
-      "date": "2026-06-10",
-      "description": "Discusses a GAO report warning that a 2025 rule change eliminated beneficial ownership reporting for over 99% of US companies, and how forensic investigators use OpenCorporates data to continue tracing ownership connections."
-    },
-    {
-      "title": "Case study: Why automating fund verification is the new standard for Client Lifecycle Management (CLM) providers",
-      "url": "https://blog.opencorporates.com/2026/05/28/automating-fund-verification-for-client-lifecycle-management/",
-      "date": "2026-05-28",
-      "description": "Examines how leading CLM providers use automated fund verification to achieve improvements in efficiency, accuracy, and client satisfaction in financial services."
-    },
-    {
-      "title": "Case study: The modern MDM strategy of a leading global investment firm",
-      "url": "https://blog.opencorporates.com/2026/05/05/case-study-modern-mdm-strategy/",
-      "date": "2026-05-05",
-      "description": "Chronicles how a major investment firm transitioned from proprietary identifiers to verification-based registry data for master data management and enterprise governance."
-    },
-    {
-      "title": "Not all legal entities are created equal",
-      "url": "https://blog.opencorporates.com/2026/05/01/not-all-legal-entities-are-created-equal/",
-      "date": "2026-05-01",
-      "description": "Part 10 in a series examining how traditional legal entity taxonomies no longer reflect modern legal reality."
-    },
-    {
-      "title": "The unwilling entity problem",
-      "url": "https://blog.opencorporates.com/2026/04/23/the-unwilling-entity-problem/",
-      "date": "2026-04-23",
-      "description": "Part 9 exploring why bad actors find legal entities attractive for illicit purposes like money movement and sanctions evasion."
-    },
-    {
-      "title": "The entity-initiated problem",
-      "url": "https://blog.opencorporates.com/2026/04/16/the-entity-initiated-problem/",
-      "date": "2026-04-16",
-      "description": "Part 8 analyzing how the LEI's entity-initiated registration model creates discovery friction at scale in voluntary market contexts."
-    },
-    {
-      "title": "The digitalization of commerce: And the identity gap at its heart",
-      "url": "https://blog.opencorporates.com/2026/04/09/the-digitalization-of-commerce/",
-      "date": "2026-04-09",
-      "description": "Part 7 discussing how digital commerce requires unambiguous entity identification to function effectively."
-    },
-    {
-      "title": "The LEI: Right idea, structural limits",
-      "url": "https://blog.opencorporates.com/2026/04/02/the-lei-right-idea-structural-limits/",
-      "date": "2026-04-02",
-      "description": "Part 6 examining why the LEI, despite being the world's best entity identifier, covers less than 1% of global legal entities."
-    },
-    {
-      "title": "The local company number problem",
-      "url": "https://blog.opencorporates.com/2026/03/26/the-local-company-number-problem/",
-      "date": "2026-03-26",
-      "description": "Part 5 demonstrating fundamental limitations of local registration numbers for cross-jurisdictional entity identification."
-    },
-    {
-      "title": "The identity crisis of business identifiers",
-      "url": "https://blog.opencorporates.com/2026/03/19/the-identity-crisis-of-business-identifiers/",
-      "date": "2026-03-19",
-      "description": "Part 4 questioning whether companies possess identifiers that actually identify the legal entity itself."
-    }
-  ],
   "repo": "open-corporates",
   "feeds": [
+    {
+      "source": "https://blog.opencorporates.com/feed/",
+      "feed_url": "https://blog.opencorporates.com/feed/",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
+    },
     {
       "source": "https://www.linkedin.com/company/opencorporates",
       "feed_url": "https://www.linkedin.com/company/opencorporates",
@@ -73,6 +16,6 @@
       "method": "none"
     }
   ],
-  "post_count": 0,
-  "fetched": "2026-06-14T20:42:17Z"
+  "fetched": "2026-06-27T12:03:07Z",
+  "post_count": 0
 }
