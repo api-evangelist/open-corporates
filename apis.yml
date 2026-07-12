@@ -49,6 +49,8 @@ apis:
         email: api@opencorporates.com
         url: https://opencorporates.com/contact
 common:
+  - type: DomainSecurity
+    url: security/open-corporates-domain-security.yml
   - type: Website
     url: https://opencorporates.com
   - type: Documentation
