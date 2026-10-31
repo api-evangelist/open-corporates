@@ -64,49 +64,106 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-OpenCorporates is the world's largest open database of companies, providing a REST API for searching and retrieving company registration data, officer information, and corporate filings globally across more than 140 jurisdictions.
+OpenCorporates is the world's largest open database of companies, providing a REST API for searching and retrieving company registration data, officer information, and corporate filings globally across more than 140 jurisdictions. The API enables access to company details, director and officer records, statutory filings, and corporate groupings, making it a primary resource for compliance, due diligence, investigative journalism, and corporate transparency.
 
-## API
+**Areas:** Companies · Corporate Data · Business Intelligence · Compliance · Due Diligence · Officers · Filings · Corporate Transparency · Open Data
 
-The OpenCorporates API (v0.4.8) provides programmatic access to company registration data. Authentication is via API token passed as a query parameter (`api_token`).
+## OpenCorporates on APIs.io
 
-**Base URL:** `https://api.opencorporates.com/v0.4`
+Everything profiled for OpenCorporates is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/open-corporates/](https://apis.io/providers/open-corporates/)** — or go straight to one of the APIs or properties below.
 
-### Key Endpoints
+### APIs (2)
 
-- `GET /companies/search` - Search companies by name
-- `GET /companies/:jurisdiction_code/:company_number` - Retrieve company details
-- `GET /companies/:jurisdiction_code/:company_number/filings` - Retrieve statutory filings
-- `GET /officers/search` - Search officers and directors
-- `GET /officers/:id` - Retrieve individual officer details
-- `GET /jurisdictions` - List available jurisdictions
-- `GET /account_status` - Check API usage and remaining quota
+- [OpenCorporates API](https://apis.io/apis/open-corporates/open-corporates-api/) — REST API providing access to the world's largest open database of companies. Search and retrieve company registration data, officer information, corporate…
+- [OpenCorporates](https://apis.io/apis/open-corporates/opencorporates/) — Data on corporate entities and directors in many countries
 
-### Authentication
+### Published properties
 
-API token via query parameter: `?api_token=YOUR_TOKEN`
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-Obtain a token at: https://opencorporates.com/api_accounts/new
+#### Security (1)
 
-## Plans
+Authentication, trust centre, and vulnerability disclosure.
 
-| Plan | Annual Cost | Monthly Calls | Daily Limit |
-|------|------------|---------------|------------|
-| Free | £0 | 200 | 50 |
-| Essentials | £2,250 | 500 | 200 |
-| Starter | £6,600 | 2,500 | 500 |
-| Basic | £12,000 | 5,000 | 1,000 |
-| Enterprise | Custom | Custom | Custom |
+- [Open Corporates Domain Security](https://apis.io/security/open-corporates/open-corporates-domain-security/)
 
-Public benefit access is available for qualifying journalists, NGOs, universities, and anti-corruption research organizations.
+#### Plans and pricing (1)
 
-## Links
+Published plans, tiers and prices.
 
-- Website: https://opencorporates.com
-- API Documentation: https://api.opencorporates.com/documentation/API-Reference
-- Pricing: https://opencorporates.com/pricing/
-- Status: https://status.opencorporates.com/
-- Blog: https://blog.opencorporates.com
-- GitHub: https://github.com/openc
-- LinkedIn: https://www.linkedin.com/company/opencorporates
-- X: https://twitter.com/opencorporates
+- [Open Corporates Plans Pricing](https://apis.io/plans/open-corporates/open-corporates-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Open Corporates Rate Limits](https://apis.io/rate-limits/open-corporates/open-corporates-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Open Corporates Finops](https://apis.io/finops/open-corporates/open-corporates-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://opencorporates.com)
+- [Documentation](https://api.opencorporates.com/documentation/API-Reference)
+- [Pricing](https://opencorporates.com/pricing/)
+- [Blog](https://blog.opencorporates.com)
+- [Status](https://status.opencorporates.com/)
+
+## API Evangelist rating
+
+**Kin Score 20.3** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 66.1 |
+| Contract quality | 24.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 21.1 |
+| Developer ergonomics | 11.9 |
+| Access clarity | 18.4 |
+
+**Agent readiness 13.6** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 5.9** — Government & Public Sector
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/open-corporates/](https://apis.io/providers/open-corporates/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for OpenCorporates: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/open-corporates/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
